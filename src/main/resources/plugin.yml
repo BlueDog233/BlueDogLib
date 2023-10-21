@@ -1,0 +1,4 @@
+name: BlueDogLib
+version: '${project.version}'
+main: cn.bluedog.bluedoglib.Main
+api-version: '1.16'
