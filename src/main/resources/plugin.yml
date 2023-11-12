@@ -2,3 +2,8 @@ name: BlueDogLib
 version: '${project.version}'
 main: cn.bluedog.bluedoglib.Main
 api-version: '1.16'
+commands:
+  bluedoglib:
+    description: reload
+  bdl:
+    description: bld

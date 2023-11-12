@@ -59,5 +59,14 @@ public class ConfigManager {
         }
         return null;
     }
+    public DataContainer getContainer(Plugin plugin, String name){
+        for (DataContainer yamlData : yamlDatass) {
+            cn.bluedog.bluedoglib.configAPI.reflect.DataContainer clz=yamlData.getClass().getAnnotation(cn.bluedog.bluedoglib.configAPI.reflect.DataContainer.class);
+            if(clz.pluginName().equals(plugin.getName())&&clz.name().equals(name)){
+                return yamlData;
+            }
+        }
+        return null;
+    }
 
 }

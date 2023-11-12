@@ -35,8 +35,6 @@ public class MysqlManager {
     }
     public static MysqlManager getInstance() throws SQLException {
         if(mysqlManager==null){
-
-
             mysqlManager=new MysqlManager();
 
         }
@@ -57,6 +55,7 @@ public class MysqlManager {
             default:
                 return null;
         }
+
 
     }
 
